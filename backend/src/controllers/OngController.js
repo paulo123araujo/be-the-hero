@@ -12,7 +12,7 @@ module.exports = {
 		});
 
 		return res.json({ id });
-	}
+	},
 
 	async index(req, res) {
 		const ongs = await connection('ongs').select('*');
